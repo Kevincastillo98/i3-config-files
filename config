@@ -183,7 +183,7 @@ bindsym  $mod+i  exec scrot
 bindsym  $mod+n exec  ranger
 
 
-exec_always  feh --bg-scale  /home/kevin/Imágenes/Wallpapers/Difuso.png
+exec_always  feh --bg-scale  <Absolute path>
 
 exec_always  nm-applet
 
