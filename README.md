@@ -6,14 +6,18 @@ This repo contains my curent configuration file and my i3 status bar.
 
 ## An overview
 
-This configuration files are alocated in `/etc/i3/config` and  `/etc/i3status`
-
-`.xinitrc`:
+This configuration files are located by default in `/etc/i3/config` and  `/etc/i3status`
+`.config`:
   
-  ```sh
-      while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
-      do
-          sleep 5
-      done &
-      exec dwm
+  ```
+      bindsym  $mod+F2 exec iceweasel
+      bindsym  $mod+F3 exec pcmanfm
+      bindsym  $mod+x  exec  morc_menu
+      bindsym  $mod+q  exec  i3lock
+      bindsym  $mod+t  exec telegram
+      bindsym  $mod+i  exec scrot
+      bindsym  $mod+n exec  ranger
+      exec_always  feh --bg-scale  /home/kevin/Imágenes/Wallpapers/Difuso.png
+      exec_always  nm-applet
+      exec_always  volumeicon
   ```
